@@ -113,11 +113,10 @@ $row_usuario = mysqli_fetch_assoc($resultado_usuario);
               <div class="text-white bg-dark" draggable="true" >
                 <div class="container">
                   <div class="row">
-                    <div class="p-5 col-md-3">
-                        
-                      <h4 class="mb-4 marge">Projeto</h4>            
-                     
-                    </div>
+                    <div class="p-5 col-md-4">
+                        <h4 class="mb-4 marge">Projeto desenvolvido por</h4>  
+                        <p class="text-center">Nome: Daniel Cunha de Queiroz</p>            
+                     </div>
                   </div>
                   <div class="row">
                     <div class="col-md-12 mt-3">
