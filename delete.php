@@ -20,7 +20,7 @@ $row_usuario = mysqli_fetch_assoc($resultado_usuario);
 </head>
 <body>
 
- <nav class="navbar navbar-expand-md navbar navbar-dark fixed-top"style="background-color: black;">
+ <nav class="navbar navbar-expand-md navbar navbar-dark fixed-top">
    <a class="navbar-brand" href="#">Projeto</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
     <span class="navbar-toggler-icon"></span>
@@ -35,14 +35,11 @@ $row_usuario = mysqli_fetch_assoc($resultado_usuario);
       </li>
       <li class="nav-item">
         <a class="nav-link" href="exibir.php">Relatório</a>
-      </li>
-      
+      </li>      
     </ul>
-  </div>
-      
+  </div>      
     </div>
   </nav>
-
 
 <div class="container">
     <div class="d-flex justify-content-center h-100">
@@ -54,14 +51,11 @@ $row_usuario = mysqli_fetch_assoc($resultado_usuario);
                     <span><i class="fab fa-google-plus-square"></i></span>
                     <span><i class="fab fa-twitter-square"></i></span>
                 </div>
-            </div>
-            
+            </div>            
             <div class="card-body">
-                <form method="POST" action="excluir.php">
-                    
+                <form method="POST" action="excluir.php">                    
                 <input type="hidden" name="codcontato" value="<?php echo $row_usuario['codcontato']; ?>">
                      <label class="control-label">Nome</label><br>
-
                      <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-key"></i></span>
@@ -92,9 +86,7 @@ $row_usuario = mysqli_fetch_assoc($resultado_usuario);
                         </div>
               <input type="text" class="form-control" name="cidade" value="<?php echo $row_usuario['cidade']; ?>"><br><br>
               </div>
-
                <label class="control-label">Data</label><br>
-
                <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-key"></i></span>
@@ -107,13 +99,11 @@ $row_usuario = mysqli_fetch_assoc($resultado_usuario);
                 <div class="card-footer">
                   <div class="d-flex justify-content-center links">
                     Voltar para lista ? <a href="editar.php">Editar</a>
+                  </div>
                 </div>
-                   
-                    </div>
                 </form>
-            </div>
-                
-            </div>
+            </div>                
+          </div>
         </div>
     </div>
 </div>
@@ -132,10 +122,8 @@ $row_usuario = mysqli_fetch_assoc($resultado_usuario);
                       <p class="text-center">© Copyright 2020 Projeto - Todos os Direitos Reservados. </p>
                     </div>
                   </div>
-                </div>
-             
-        </footer>
-
+                </div>             
+</footer>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
