@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
- 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
- 	<title>Projeto</title>
-
-	<link rel="stylesheet" type="text/css" href="css/estilo3.css">
+    <title>Projeto</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo3.css">
     <link rel="shortcut icon" href="css/img/icone.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-   
 </head>
 <body>
 
   <nav class="navbar navbar-expand-md navbar navbar-dark fixed-top"style="background-color: black;">
-     <a class="navbar-brand" href="#">Projeto</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
-           <span class="navbar-toggler-icon"></span>
-        </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">    
-                    <li class="nav-item active">
-                    <a class="nav-link" href="cadastro.php">Cadastrar</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="editar.php">Editar</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="exibir.php">Relatório</a>
-                    </li>
-                </ul>
-           </div>
-   </nav>
+   <a class="navbar-brand" href="#">Projeto</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">     
+      <li class="nav-item active">
+        <a class="nav-link" href="cadastro.php">Cadastrar</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="editar.php">Editar</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="exibir.php">Relatório</a>
+      </li>
+      
+    </ul>
+  </div>
+      
+    </div>
+  </nav>
+
 
 	<div class="container">
 	<div class="d-flex justify-content-center h-100">
