@@ -48,7 +48,7 @@ $row_usuario = mysqli_fetch_assoc($resultado_usuario);
     <div class="d-flex justify-content-center h-100">
         <div class="card">
             <div class="card-header">
-                <h2>Excluir Usuário</h2>
+                <h2>Editar Usuário</h2>
                 <div class="d-flex justify-content-end social_icon">
                     <span><i class="fab fa-facebook-square"></i></span>
                     <span><i class="fab fa-google-plus-square"></i></span>
@@ -73,8 +73,17 @@ $row_usuario = mysqli_fetch_assoc($resultado_usuario);
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-key"></i></span>
                         </div>
-             <input type="text" class="form-control" name="sexo" value="<?php echo $row_usuario['sexo']; ?>"><br><br>
-
+            <select class="form-control" name="sexo" required="required">
+                    <?php
+                        $result_niveis_acessos = "SELECT * FROM cadastro WHERE codcontato = '$codcontato'";
+                        $resultado_niveis_acesso = mysqli_query($con, $result_niveis_acessos);
+                        while($row_niveis_acessos = mysqli_fetch_assoc($resultado_niveis_acesso)){ ?>
+                            <option><?php echo $row_niveis_acessos['sexo']; ?></option> <?php
+                        }
+                    ?>
+                     <option value="Masculino">Masculino</option>
+                     <option value="Feminino">Feminino</option>
+                </select><br><br>
             </div>
               <label class="control-label">Cidade</label><br>
               <div class="input-group form-group">
@@ -127,9 +136,9 @@ $row_usuario = mysqli_fetch_assoc($resultado_usuario);
              
         </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     
     
 </body>

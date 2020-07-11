@@ -11,15 +11,15 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-md navbar navbar-dark fixed-top"style="background-color: black;">
+ <nav class="navbar navbar-expand-md navbar navbar-dark fixed-top"style="background-color: black;">
    <a class="navbar-brand" href="#">Projeto</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">     
-      <li class="nav-item active">
-        <a class="nav-link" href="cadastro.php">Cadastrar</a>
+      <li class="nav-item">
+        <a class="nav-link active" href="cadastro.php">Cadastrar</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="editar.php">Editar</a>
@@ -35,29 +35,28 @@
   </nav>
 
 
-	<div class="container">
-	<div class="d-flex justify-content-center h-100">
-		<div class="card">
-			<div class="card-header">
-				<h3>Cadastrar</h3>	
-				<div class="d-flex justify-content-end social_icon">
-					<span><i class="fab fa-facebook-square"></i></span>
-					<span><i class="fab fa-google-plus-square"></i></span>
-					<span><i class="fab fa-twitter-square"></i></span>
-				</div>
-			</div>
-			<div class="card-body">
-				<form method="post" action="salvar.php">
-					<label class="control-label">Nome</label><br>
-					<div class="input-group form-group">
-						<div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-user"></i></span>
-						</div>
-						<input type="text" class="form-control" name="nome" placeholder="Digite seu nome" required="required">
-						
-					</div>
-				
-					<label class="control-label">Sexo</label><br>
+<div class="container">
+    <div class="d-flex justify-content-center h-100">
+        <div class="card">
+            <div class="card-header">
+                <h3>Cadastrar</h3>
+                <div class="d-flex justify-content-end social_icon">
+                    <span><i class="fab fa-facebook-square"></i></span>
+                    <span><i class="fab fa-google-plus-square"></i></span>
+                    <span><i class="fab fa-twitter-square"></i></span>
+                </div>
+            </div>
+            
+            <div class="card-body">
+                <form method="POST" action="salvar.php">
+                    <label class="control-label">Nome</label><br>
+                     <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                        </div>
+                     <input type="text" class="form-control" name="nome" placeholder="Digite seu nome" required="required"><br><br>
+                        </div>
+                   <label class="control-label">Sexo</label><br>
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-key"></i></span>
@@ -68,31 +67,30 @@
                          <option value="Feminino">Feminino</option>
                         </select>
 					    </div>
-
-					<label class="control-label">Data</label><br>
-					<div class="input-group form-group">
-						<div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-key"></i></span>
-						</div>
-						<input id="date" class="form-control" name="data" type="date" required="required">
-					</div>
-
-					<label class="control-label">Cidade</label><br>
-					<div class="input-group form-group">
-						<div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-key"></i></span>
-						</div>
-						<input type="text" class="form-control" name="cidade" placeholder="Digite a cidade" required="required">
-					</div>
-
-					<div class="form-group">
-						<input type="submit" name="register" value="Cadastrar" class="btn btn-info login_btn">
-					</div>
-				</form>
-			</div>
-			
-		</div>
-	</div>
+                   <label class="control-label">Cidade</label><br>
+                     <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                        </div>
+                      <input type="text" class="form-control" name="cidade" placeholder="Digite a cidade" required="required">
+                   </div>
+               <label class="control-label">Data</label><br>
+               <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                        </div>
+               <input id="date" class="form-control" name="data" type="date" required="required"><br><br>
+               </div>
+               <div class="form-group">
+                        <input type="submit" value="Cadastrar" class="btn btn-info login_btn">
+                    </div>                   
+                    </div>
+                </form>
+            </div>
+                
+            </div>
+        </div>
+    </div>
 </div>
 
 <footer>
@@ -111,16 +109,16 @@
                   </div>
                 </div>
              
-</footer>
+        </footer>
 
 <script type="text/javascript">
        document.getElementById('teste')[0].selected = "selected"; 
 </script>
 
-
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
-
+    
+    
 </body>
 </html>
