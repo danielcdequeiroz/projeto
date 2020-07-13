@@ -8,8 +8,6 @@ $sexo = filter_input(INPUT_POST, 'sexo', FILTER_SANITIZE_STRING);
 $cidade = filter_input(INPUT_POST, 'cidade', FILTER_SANITIZE_STRING);
 $data = filter_input(INPUT_POST, 'data', FILTER_SANITIZE_STRING);
 
-//echo "Nome: $nome <br>";
-//echo "E-mail: $email <br>";
 
 $result_usuario = "DELETE FROM cadastro WHERE codcontato='$codcontato'";
 $resultado_usuario = mysqli_query($con, $result_usuario);
