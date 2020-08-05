@@ -35,7 +35,7 @@
     <table class="table table-hover">
         <thead>
         <tr>
-            <th>Registro no Banco de Dados</th>       
+            <th>Contatos no Banco de Dados</th>       
         </tr>
         </thead>
 </table>
