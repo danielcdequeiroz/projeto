@@ -24,7 +24,7 @@
         <a class="nav-link" href="editar.php">Editar</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="exibir.php">Relatório</a>
+        <a class="nav-link" href="exibir.php">Contar Contatos</a>
       </li>     
     </ul>
   </div>
